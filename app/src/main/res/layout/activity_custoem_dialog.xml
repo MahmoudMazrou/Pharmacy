@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.Dialog.CustoemDialog">
+
+    <Button
+        android:id="@+id/customBtAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/blue_fill__rounded_color"
+        android:text="Add"
+        app:layout_constraintStart_toEndOf="@+id/customBtCancel"
+        app:layout_constraintTop_toBottomOf="@+id/customOrderNote" />
+
+    <EditText
+        android:id="@+id/customOrderNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Enter notes  "
+        android:textColor="@color/black"
+        android:textColorHint="#0F75A3"
+        android:textColorLink="#0C4A7C"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/customOrderNumber"
+        app:layout_constraintTop_toBottomOf="@+id/customOrderNumber" />
+
+    <EditText
+        android:id="@+id/customOrderNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+
+        android:hint="order Quantity "
+        android:inputType="number"
+        android:textColorHint="#0F75A3"
+        android:textColorLink="#0C4A7C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/customBtCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_fill__rounded_color"
+        android:text="Cancel"
+        app:layout_constraintStart_toEndOf="@+id/customOrderNote"
+        app:layout_constraintTop_toTopOf="@+id/customBtAdd" />
+</androidx.constraintlayout.widget.ConstraintLayout>
